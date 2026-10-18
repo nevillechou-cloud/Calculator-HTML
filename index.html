@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calculator-container">
+    <div class="calculator">
+      <!-- Screen / Display Area -->
+      <div class="display">
+        <div class="previous-operand" id="previous-operand"></div>
+        <div class="current-operand" id="current-operand">0</div>
+      </div>
+
+      <!-- Keypad Grid -->
+      <div class="keypad">
+        <button type="button" class="btn btn-function" data-action="clear" title="All Clear (Esc)">AC</button>
+        <button type="button" class="btn btn-function" data-action="delete" title="Backspace (Backspace)">⌫</button>
+        <button type="button" class="btn btn-function" data-action="percent" title="Percentage (%)">%</button>
+        <button type="button" class="btn btn-operator" data-action="operator" data-operator="÷" title="Divide (/)">÷</button>
+
+        <button type="button" class="btn btn-number" data-number="7">7</button>
+        <button type="button" class="btn btn-number" data-number="8">8</button>
+        <button type="button" class="btn btn-number" data-number="9">9</button>
+        <button type="button" class="btn btn-operator" data-action="operator" data-operator="×" title="Multiply (*)">×</button>
+
+        <button type="button" class="btn btn-number" data-number="4">4</button>
+        <button type="button" class="btn btn-number" data-number="5">5</button>
+        <button type="button" class="btn btn-number" data-number="6">6</button>
+        <button type="button" class="btn btn-operator" data-action="operator" data-operator="-" title="Subtract (-)">−</button>
+
+        <button type="button" class="btn btn-number" data-number="1">1</button>
+        <button type="button" class="btn btn-number" data-number="2">2</button>
+        <button type="button" class="btn btn-number" data-number="3">3</button>
+        <button type="button" class="btn btn-operator" data-action="operator" data-operator="+" title="Add (+)">+</button>
+
+        <button type="button" class="btn btn-function" data-action="toggle-sign" title="Toggle Sign">±</button>
+        <button type="button" class="btn btn-number" data-number="0">0</button>
+        <button type="button" class="btn btn-number" data-action="decimal" title="Decimal Point (.)">.</button>
+        <button type="button" class="btn btn-equals" data-action="calculate" title="Calculate (Enter or =)">=</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
